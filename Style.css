@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+    --black: rgb(20, 20, 20);
+    --white: white;
+    --grey: rgb(51, 51, 51);
+    --dark-grey: rgb(31, 31, 31);
+    --green: hsl(75, 94%, 57%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0; 
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;  
+}
+main{
+    margin: 10% auto;
+    width: fit-content;
+    height: fit-content;   
+    background-color: var(--dark-grey);
+    padding: 0 2em;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 1em;
+    color: var(--green);
+    margin: 5% auto;
+}
+h1{
+    font-size: 1.8em;
+}
+#avatar{
+    margin: 1.8em auto;
+    display: block;
+    width: 35%;
+    border-radius: 50%;
+}
+p{
+    margin: 8% auto;
+    font-size: 14px;
+}
+
+.texts{
+    text-align: center;
+    width: fit-content;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1.8em;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+button{
+    margin: 0.4em auto;
+    width: 100%;
+    background-color: var(--grey);
+    border-radius: 7px 7px;
+    padding: 10px;
+    color: var(--white);
+    border: none;
+}
+button:hover{
+    background-color:var(--green);
+    cursor: pointer;
+    a{
+        color: var(--black);
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
